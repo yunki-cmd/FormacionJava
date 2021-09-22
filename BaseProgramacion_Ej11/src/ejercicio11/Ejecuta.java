@@ -40,10 +40,12 @@ año de nacimiento.
 		
 		
 	}
-	System.out.println("la media de edad es: "+
-			mediaAcu/contador+" y el menor de todos es: "+
-			nombre_menor.toUpperCase()+" con "+ menor
-			);
+	if(contador > 0) {		
+		System.out.println("la media de edad es: "+
+				mediaAcu/contador+" y el menor de todos es: "+
+				nombre_menor.toUpperCase()+" con "+ menor
+				);
+	}
 	input.close();	
 	}
 
