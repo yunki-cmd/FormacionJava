@@ -7,18 +7,18 @@ public class Ejecuta {
 	public static void main(String[] args) {
 		
 		/*
-		 * Programa que lee nombre y año de nacimiento de una serie de alumnos hasta introducir
-como nombre de alumno “fin”. En ese momento mostrará la edad media de los alumnos y
-el nombre del alumno menor. NOTA: Al introducir como nombre “fin”, no nos ha de pedir el
-año de nacimiento.
+		 * Programa que lee nombre y aÃ±o de nacimiento de una serie de alumnos hasta introducir
+como nombre de alumno â€œfinâ€. En ese momento mostrarÃ¡ la edad media de los alumnos y
+el nombre del alumno menor. NOTA: Al introducir como nombre â€œfinâ€, no nos ha de pedir el
+aÃ±o de nacimiento.
 		 * 
 		 * */
-	int año_actual = 2021;
+	int aÃ±o_actual = 2021;
 	double mediaAcu = 0;
 	String nombre;
 	String nombre_menor="";
 	int menor = Integer.MAX_VALUE;
-	int añoNacimiento;
+	int aÃ±oNacimiento;
 	boolean salir = false;
 	int contador = 0;
 	Scanner input = new Scanner(System.in);
@@ -27,13 +27,13 @@ año de nacimiento.
 		nombre = input.nextLine();
 		if(nombre.equalsIgnoreCase("fin"))salir=true;
 		if(!salir) {			
-			System.out.println("intorduzca su año de nacimiento "
+			System.out.println("intorduzca su aÃ±o de nacimiento "
 					+ "ejemplo : 2000");
-			añoNacimiento = Integer.parseInt(input.nextLine());
-			mediaAcu = (double) mediaAcu + (año_actual-añoNacimiento);
+			aÃ±oNacimiento = Integer.parseInt(input.nextLine());
+			mediaAcu = (double) mediaAcu + (aÃ±o_actual-aÃ±oNacimiento);
 			contador++;
-			if( (año_actual- añoNacimiento) < menor) {
-				menor = año_actual- añoNacimiento;
+			if( (aÃ±o_actual- aÃ±oNacimiento) < menor) {
+				menor = aÃ±o_actual- aÃ±oNacimiento;
 				nombre_menor = nombre;
 			}
 		}
@@ -47,7 +47,7 @@ año de nacimiento.
 				);
 	}
 	input.close();
-	//otro fin
+	//otro fin desde github
 	}
 
 }
