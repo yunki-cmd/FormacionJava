@@ -46,7 +46,8 @@ año de nacimiento.
 				nombre_menor.toUpperCase()+" con "+ menor
 				);
 	}
-	input.close();	
+	input.close();
+	//otro fin
 	}
 
 }
